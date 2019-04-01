@@ -1,6 +1,9 @@
 # CD-berry
 Solid State emulation with a Raspberry Pi Zero
 
+## Current status
+This project is not complete yet. Sources have to be uploaded and the Wiki, which is an important part of this project, is not complete also.
+
 # Rationale
 When upgrading BIOS firmware on servers (e.g. Dell R<number> servers) sometimes the only way to perform these is using a CD-rom. Often a bootable USB-stick is not possible, because the OS applied by the software (e.g. Dell Repository Manager) creating firmware upgrade deployments expects to mount a CD-rom. An USB-stick just won't work.
 To solve this a normal CD could be burned, but well, those are not that common any more and also CD-burners are becoming more and more an exception.
