@@ -1,10 +1,10 @@
 [gpio5=0]
-#dtoverlay=bootconfig,bootvalue=ethernet;192.168.137.4;255.255.255.0
+#dtoverlay=bootconfig,bootvalue=ethernet;192.168.137.22;255.255.255.0
 dtoverlay=bootconfig,bootvalue=emergency
 gpio=19=op,dh
 
 [gpio5=1]
-#dtoverlay=bootconfig,bootvalue=ethernet;192.168.137.4;255.255.255.0
+#dtoverlay=bootconfig,bootvalue=ethernet;192.168.137.22;255.255.255.0
 dtoverlay=bootconfig,bootvalue=normal
 gpio=19=op,dl
 
