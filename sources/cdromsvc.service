@@ -1,0 +1,11 @@
+[Unit]
+Description=USB CDRom service
+After=network.target
+DefaultDependencies=no
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/cdromsvc.py
+
+[Install]
+WantedBy=sysinit.target
