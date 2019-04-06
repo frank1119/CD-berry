@@ -1,0 +1,23 @@
+// Creates /sys/firmware/devicetree/base/bootconfig/bootvalue and
+// assignes the value to it passed in the config.txt
+// Load: dtoverlay=bootconfig,bootvalue=<some value>
+
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "brcm,bcm2708";
+	fragment@0 {
+		target-path = "/";
+		__overlay__ {
+			bootconfig: bootconfig {
+				status = "okay";
+                                bootvalue = "Default";
+			};
+		};
+	};
+        
+        __overrides__ {
+                bootvalue = <&bootconfig>,"bootvalue";
+	};
+};
