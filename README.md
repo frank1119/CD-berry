@@ -11,3 +11,6 @@ My long-term solution is a Raspberry Pi Zero emulating a USB CD-ROM player.
   
 # Content
 In this project are some sources to make the solution viable and, very important, an extensive [Wiki](https://github.com/frank1119/CD-berry/wiki) how to set up the Raspberry Pi Zero
+
+# (Not enough) support for DVDs larger than 2 GB
+The patch for DVDs larger than about 2 GB seems to be flawed. Using Windows it seems to work well enough. Linux, however, does not read the larger DVDs, even when patched. I've implemented a new patch, but that patch is not as easy to apply as the old 'patch' and differs depending on the linux kernel sources version
